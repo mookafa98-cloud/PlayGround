@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+  <meta name="theme-color" content="#183c39" />
+  <title>Windward — The Shattered Reach</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Marcellus&display=swap" rel="stylesheet">
+  <script type="module" crossorigin src="/assets/index-BE9tSEri.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-DG1dauI7.css">
+</head>
+<body>
+  <div id="game-root">
+    <canvas id="world" aria-label="Windward open world game"></canvas>
+    <div class="vignette"></div>
+    <header class="topbar">
+      <div class="brand"><div class="brand-mark">✳</div><div><span class="brand-name">WINDWARD</span><span class="brand-sub">THE SHATTERED REACH</span></div></div>
+      <div class="region-tag"><span class="region-dot"></span> THE WILD MARCHES</div>
+      <div class="top-right"><div class="clock"><span class="sun-icon">☼</span><span id="clock">08:24</span></div><button id="sound-button" class="icon-button" aria-label="Toggle sound">♫</button><button id="fullscreen-button" class="icon-button" aria-label="Fullscreen">⛶</button></div>
+    </header>
+    <section class="quest-card"><div class="eyebrow">JOURNAL <span>•</span> MAIN THREAD</div><div class="quest-title">A song in the stone</div><div class="quest-copy">Find the floating windstone<br>near the old road and wake it.</div><div class="quest-progress"><i></i><span>FIND THE WINDSTONE</span></div></section>
+    <div class="compass"><div class="compass-line"></div><span class="compass-n">N</span><span class="compass-e">E</span><span class="compass-s">S</span><span class="compass-w">W</span><div class="compass-needle"></div><div class="compass-center"></div><span class="compass-label">FIELD COMPASS</span></div>
+    <div class="status-panel"><div class="vitals"><div class="heart">♥</div><div class="hearts" id="hearts"></div><span class="vital-divider"></span><div class="shield-icon">⬟</div><div class="armor-pips"><i></i><i></i><i></i></div></div><div class="stamina-row"><span class="stamina-label">VIGOR</span><div class="stamina-track"><i id="stamina-fill"></i></div><span class="stamina-glyph">✦</span></div></div>
+    <div class="location-toast" id="location-toast"><span class="toast-icon">⌖</span><span id="location-name">THE WILD MARCHES</span></div>
+    <div class="interact-prompt" id="interact-prompt"><kbd>E</kbd><span>Listen to the windstone</span></div>
+    <div class="center-message" id="center-message"></div>
+    <div class="weapon-chip"><div class="weapon-icon">⚔</div><div class="weapon-copy"><span>FIELD-BORN SABRE</span><small id="weapon-durability">DURABILITY 86%</small></div><div class="weapon-key">1</div></div>
+    <div class="controls-hint"><span><kbd>WASD</kbd> MOVE</span><span><kbd>SPACE</kbd> JUMP / CLIMB</span><span><kbd>SHIFT</kbd> SPRINT</span><span><kbd>F</kbd> GLIDE</span><span><kbd>CLICK</kbd> STRIKE</span><span><kbd>E</kbd> INTERACT</span></div>
+    <div class="mobile-controls" id="mobile-controls"><div class="touch-stick" id="touch-stick"><div class="stick-base"><div class="stick-knob"></div></div></div><div class="touch-actions"><button data-action="attack">⚔<small>HIT</small></button><button data-action="jump">↑<small>JUMP</small></button><button data-action="glide">◈<small>GLIDE</small></button><button data-action="interact">◎<small>ACT</small></button></div><div class="mobile-sprint" id="mobile-sprint">RUN</div></div>
+    <div class="map-inset"><canvas id="minimap" width="180" height="180"></canvas><div class="map-frame"></div><span class="map-label">YOU ARE HERE</span></div>
+    <div class="discovery" id="discovery"><div class="discovery-rule"></div><div class="discovery-overline">NEW DISCOVERY</div><div class="discovery-name">THE WINDWARD SPIRE</div><div class="discovery-rule right"></div></div>
+    <div class="ending-screen" id="ending-screen" aria-live="polite"><div class="ending-mark">✳</div><div class="ending-kicker" id="ending-kicker">THE SONG REMEMBERS</div><h1 id="ending-title">The Reach is awake</h1><p id="ending-copy">The old signal carries across the Marches once more.</p><button id="restart-button">WALK THE REACH AGAIN</button></div>
+    <div class="fade-screen" id="fade-screen"><div class="loading-mark">✳</div><div>WINDWARD</div></div>
+  </div>
+</body>
+</html>
